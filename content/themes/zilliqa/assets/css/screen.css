@@ -872,6 +872,10 @@ make sure this only happens on large viewports / desktop-ish devices.
   color: color-mod(var(--color-darkgrey) l(-5%));
 }
 
+.article-title-toc {
+  text-align: center;
+}
+
 .has-serif-title .article-title {
   font-family: var(--font-serif);
 }
@@ -1001,6 +1005,10 @@ is the very first element in the post content */
   color: var(--ghost-accent-color);
   text-decoration: underline;
   word-break: break-word;
+}
+
+.gh-content .toc-list-item a {
+  text-decoration: none;
 }
 
 .gh-content > blockquote:not([class]),
@@ -1174,8 +1182,21 @@ except for when immediately preceeded by a heading */
   font-family: var(--font-sans);
 }
 
+.kg-card.kg-header-card {
+  border-top-right-radius: 20vmin;
+  border-bottom-right-radius: 20vmin;
+}
+
+.kg-card.kg-header-card.kg-width-full {
+  grid-column: full-start / main-end;
+}
+
 .kg-card.kg-header-card.kg-style-dark {
   background: var(--color-darkgrey);
+}
+
+.kg-card.kg-header-card h2.kg-header-card-header {
+  letter-spacing: 0.2em;
 }
 
 .kg-header-card.kg-style-light h2.kg-header-card-header {
@@ -1326,15 +1347,29 @@ iframe.instagram-media + script + :not([id]) {
   align-items: center;
 }
 
+.article-byline-content-toc {
+  justify-content: center;
+  flex-direction: column;
+}
+
 .article-byline-content .author-list {
   justify-content: flex-start;
   padding: 0 12px 0 0;
+}
+
+.article-byline-content .author-list-toc {
+  padding: 0;
+  margin: 0;
 }
 
 .article-byline-meta {
   color: color-mod(var(--color-midgrey));
   font-size: 1.4rem;
   line-height: 1.2em;
+}
+
+.article-byline-meta-toc {
+  text-align: center;
 }
 
 .article-byline-meta h4 {

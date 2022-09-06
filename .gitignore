@@ -2,3 +2,4 @@ node_modules
 logs
 .ghostpid
 content/data
+assets/built

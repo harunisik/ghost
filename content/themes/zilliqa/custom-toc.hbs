@@ -18,15 +18,15 @@ into the {body} tag of the default.hbs template --}}
             </section>
             {{/if}}
 
-            <h1 class="article-title">{{title}}</h1>
+            <h1 class="article-title article-title-toc">{{title}}</h1>
 
             {{#if custom_excerpt}}
             <p class="article-excerpt">{{custom_excerpt}}</p>
             {{/if}}
 
             <div class="article-byline">
-                <section class="article-byline-content">
-                    <ul class="author-list">
+                <section class="article-byline-content article-byline-content-toc">
+                    <ul class="author-list author-list-toc">
                         {{#foreach authors}}
                         <li class="author-list-item">
                             {{#if profile_image}}
@@ -39,7 +39,7 @@ into the {body} tag of the default.hbs template --}}
                         </li>
                         {{/foreach}}
                     </ul>
-                    <div class="article-byline-meta">
+                    <div class="article-byline-meta article-byline-meta-toc">
                         <h4 class="author-name">{{authors}}</h4>
                         <div class="byline-meta-content">
                             <time class="byline-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
